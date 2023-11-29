@@ -216,7 +216,9 @@ describe('strings-tasks', () => {
 
   it.optional(
     'sumOfCodes should calculate the sum of character codes of the given string',
-    () => {
+    () => {function startsWith(str, substr) {
+      return str.startsWith(substr);
+    }
       assert.equal(tasks.sumOfCodes('My String'), 861);
       assert.equal(tasks.sumOfCodes('12345'), 255);
       assert.equal(tasks.sumOfCodes(''), 0);
